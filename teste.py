@@ -10,7 +10,7 @@ def trigger_python(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('A função foi disparada pelo Power Automate.')
 
     # Exemplo simples de criação de dados
-    df = pd.DataFrame({"Status": ["Sucesso"], "Mensagem": ["Rodando no Azure"]})
+    df = pd.DataFrame({"Status": ["Sucesso!"], "Mensagem": ["Rodando no Azure"]})
 
     # Retornamos apenas uma confirmação por enquanto
     return func.HttpResponse("Código Python executado com sucesso!", status_code=200)
