@@ -1,7 +1,7 @@
 # meu_script.py
 import datetime
 
-def executar_tarefa():
+def funcao_teste():
     agora = datetime.datetime.now()
     print(f"--- Script executado internamente em: {agora} ---")
     
