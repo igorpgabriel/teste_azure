@@ -1,7 +1,7 @@
 import azure.functions as func
 import datetime
 import logging
-from meu_script import minha_funcao
+from main import funcao_teste
 
 app = func.FunctionApp()
 
@@ -10,5 +10,5 @@ def timer_trigger(myTimer: func.TimerRequest) -> None:
     if myTimer.past_due:
         logging.info('O agendamento está atrasado!')
     
-    minha_funcao()
+    funcao_teste()
     logging.info('Script executado com sucesso.')
